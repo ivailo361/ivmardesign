@@ -19,6 +19,8 @@ services:
         # - modules:/workspaces/node_modules
       # Overrides default command so things don't shut down after the process ends.
     command: sleep infinity
+    ports:
+      - 4004:4004
     # entrypoint:
     #   - "/usr/local/share/docker-init.sh"
     # Runs app on the same network as the database container, allows "forwardPorts" in devcontainer.json function.
